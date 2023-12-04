@@ -27,6 +27,7 @@ Atlantic (4-band images, 485 + 100) -- https://zenodo.org/record/4498086#.YMh3Gf
    A script for training the final model on Amazon 2 data
 3. Results
    A script analyzing the results of the model focusing on a small area in Bolivia. Calculates and compares forests in a given area across multiple time periods.
+
 /exploration
 1. Semantic segmentation
    A base model used as initial reference to compare the U-Net with
