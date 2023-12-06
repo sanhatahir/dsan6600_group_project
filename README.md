@@ -47,3 +47,8 @@ To be moved:
 PROMISING: 
 1. UNet_Amazon_bolivia -> exploration
 2. Data augmentation -> exploration
+3. Experimentation.ipynb: 
+   * Loads and Ingests data 
+   * Runs all 8 models
+   * Test models on unseen Bolivia images 
+   * Get evaluation metrics 
