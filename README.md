@@ -18,6 +18,10 @@ Amazon 2 (4-band images, 499 + 100) -- https://zenodo.org/record/4498086#.YMh3Gf
 
 Atlantic (4-band images, 485 + 100) -- https://zenodo.org/record/4498086#.YMh3GfKSmCU
 
+
+Our test data of Bolivia was acquired from the publicly available Planet API -- https://developers.planet.com/docs/apis/
+
+
 ### Files
 
 /src
@@ -36,7 +40,16 @@ Atlantic (4-band images, 485 + 100) -- https://zenodo.org/record/4498086#.YMh3Gf
 3. data_augmentation
    An initial experiment with data augmentation
 
-
+/model
+1. Running_models.ipynb:
+   * Loads and ingests data 
+   * Runs and saves all 8 models
+   * Test models on unseen Bolivia images 
+   * Get evaluation metrics 
+2. predicting_across_bolivia.ipynb:
+   * Loads model_unet (the best performing model from our experiments)
+   * Loads and processes our untested dataset of Bolivia 
+   * Runs prediction for masks on these images and calculates required metrics 
 
 / Archive:
 1. UNet_01: First run of U-Net Architecture from given site:
@@ -47,8 +60,4 @@ To be moved:
 PROMISING: 
 1. UNet_Amazon_bolivia -> exploration
 2. Data augmentation -> exploration
-3. Experimentation.ipynb: 
-   * Loads and Ingests data 
-   * Runs all 8 models
-   * Test models on unseen Bolivia images 
-   * Get evaluation metrics 
+3. 
