@@ -52,12 +52,17 @@ Our test data of Bolivia was acquired from the publicly available Planet API -- 
    * Runs prediction for masks on these images and calculates required metrics 
 
 / Archive:
-1. UNet_01: First run of U-Net Architecture from given site:
+A sort of *blooper reel* of our experiments as we were figuring out our configs and codes 
+1. UNet_01.ipynb: First run of U-Net Architecture from given site:
   https://www.kaggle.com/code/vanvalkenberg/image-segmentation-u-net-for-self-driving-cars/notebook?scriptVersionId=54705605 
+2. data_augmentation.ipynb: 
+   Experiments to increase training size of 30 images from Amazon Forest dataset
+   Failed, as models work better with original images, not augmented ones 
+3. UNet_Amazon.ipynb: 
+   Experimenting with U-Net architectire on Amazon forest dataset on original data
+4. UNet_Amazon_bolivia.ipynb:
+   Using U-Net trained on Amazon data for 
+   Issue: Incorrect Predictions (all green boxes)
+   Solution: Not imgesting Bolivia data correctly (thanks to Prof. Hickman)
 
 
-To be moved: 
-PROMISING: 
-1. UNet_Amazon_bolivia -> exploration
-2. Data augmentation -> exploration
-3. 
